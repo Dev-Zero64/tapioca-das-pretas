@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Menu } from "./pages/Menu";
 import { History } from "./pages/History";
 import { Contact } from "./pages/Contact";
+import { Media } from "./pages/Media";
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="/cardapio" element={<Menu />} />
               <Route path="/nossa-historia" element={<History />} />
               <Route path="/contato" element={<Contact />} />
+              <Route path="/midias" element={<Media />} />
             </Routes>
           </main>
           <Footer />
