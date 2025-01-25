@@ -1,5 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const Home = () => {
   return (
@@ -22,6 +29,48 @@ export const Home = () => {
               <ArrowRight className="ml-2" size={20} />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-brand-terra mb-8">
+            Nossa Cozinha
+          </h2>
+          <Carousel className="w-full max-w-4xl mx-auto">
+            <CarouselContent>
+              <CarouselItem>
+                <div className="aspect-video relative rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+                    alt="Pratos típicos"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="aspect-video relative rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26"
+                    alt="Tapioca sendo preparada"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="aspect-video relative rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1515516969-d4008cc6241a"
+                    alt="Ambiente acolhedor"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
