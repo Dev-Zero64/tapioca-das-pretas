@@ -31,6 +31,9 @@ export const Navbar = () => {
             <Link to="/contato" className="text-gray-700 hover:text-brand-orange">
               Contato
             </Link>
+            <Link to="/midias" className="text-gray-700 hover:text-brand-orange">
+              Mídias
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -76,6 +79,13 @@ export const Navbar = () => {
               onClick={toggleMenu}
             >
               Contato
+            </Link>
+            <Link
+              to="/midias"
+              className="block px-3 py-2 text-gray-700 hover:text-brand-orange"
+              onClick={toggleMenu}
+            >
+              Mídias
             </Link>
           </div>
         </div>
