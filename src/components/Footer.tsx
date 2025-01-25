@@ -1,4 +1,4 @@
-import { Facebook, Instagram, TikTok, Music, Phone } from "lucide-react";
+import { Facebook, Instagram, Music, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -28,9 +28,6 @@ export const Footer = () => {
               </a>
               <a href="#" className="hover:text-brand-orange">
                 <Facebook size={24} />
-              </a>
-              <a href="#" className="hover:text-brand-orange">
-                <TikTok size={24} />
               </a>
               <a href="#" className="hover:text-brand-orange">
                 <Music size={24} />
