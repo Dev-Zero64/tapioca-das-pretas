@@ -5,10 +5,11 @@ import {
   IconLeaf,
   IconBottle,
   IconBuildingStore,
+  IconX,
 } from "@tabler/icons-react";
 
 const menuCategories = [
-  {
+   {
     category: "Tapiocas",
     icon: <IconCookie className="text-brand-orange" size={32} />,
     items: [
@@ -215,13 +216,13 @@ const menuCategories = [
   },
 ];
 
-const MenuItem = ({ name, description, price, tags, image }) => (
+const MenuItem = ({ name, description, price, tags, image, onClick }) => (
   <article
-    className="group p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300 focus-within:ring-2 focus-within:ring-brand-orange"
+    className="group p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300 focus-within:ring-2 focus-within:ring-brand-orange cursor-pointer"
     tabIndex={0}
+    onClick={onClick}
   >
     <div className="flex gap-4">
-      {/* Container da imagem */}
       <div className="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden shadow-sm">
         <img
           src={image}
@@ -230,8 +231,6 @@ const MenuItem = ({ name, description, price, tags, image }) => (
           loading="lazy"
         />
       </div>
-
-      {/* Conteúdo textual */}
       <div className="flex-1 flex flex-col sm:flex-row justify-between gap-4">
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
@@ -249,8 +248,6 @@ const MenuItem = ({ name, description, price, tags, image }) => (
             </div>
           )}
         </div>
-
-        {/* Preço */}
         <div className="sm:w-32 flex-shrink-0">
           <p className="text-brand-terra font-bold text-lg sm:text-right">
             {price.toLocaleString("pt-BR", {
@@ -265,8 +262,52 @@ const MenuItem = ({ name, description, price, tags, image }) => (
   </article>
 );
 
+const Modal = ({ item, onClose }) => (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+    <div className="bg-white rounded-lg w-full max-w-2xl overflow-hidden shadow-xl">
+      <div className="p-6">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-bold text-gray-900">{item.name}</h2>
+          <button
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+          >
+            <IconX size={24} />
+          </button>
+        </div>
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-full h-64 object-cover rounded-lg mb-4"
+        />
+        <p className="text-gray-600 mb-4">{item.description}</p>
+        {item.tags?.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {item.tags.map((tag) => (
+              <span
+                key={tag}
+                className="px-2 py-1 text-xs font-medium bg-brand-light text-brand-terra rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+        <p className="text-brand-terra font-bold text-lg">
+          {item.price.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+            minimumFractionDigits: 2,
+          })}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 export const Menu = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const filteredCategories = menuCategories
     .map((category) => ({
@@ -321,7 +362,11 @@ export const Menu = () => {
                 </div>
                 <div className="divide-y divide-gray-100">
                   {category.items.map((item) => (
-                    <MenuItem key={item.name} {...item} />
+                    <MenuItem
+                      key={item.name}
+                      {...item}
+                      onClick={() => setSelectedItem(item)}
+                    />
                   ))}
                 </div>
               </section>
@@ -329,6 +374,10 @@ export const Menu = () => {
           )}
         </div>
       </div>
+
+      {selectedItem && (
+        <Modal item={selectedItem} onClose={() => setSelectedItem(null)} />
+      )}
     </div>
   );
 };
