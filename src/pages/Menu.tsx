@@ -26,7 +26,22 @@ const menuCategories = [
         price: 20.00,
         tags: ["Sobremesa de Tapioca"],
         image: "https://xamegobom.com.br/wp-content/uploads/2017/02/tapioca-com-leite-condensado1.jpg"
-      }
+      },
+      {
+        name: "Gloria Maria",
+        description: "Tapioca tradicional na manteiguinha de leite. O biju que amamos! Tapioca leve e massa fininha",
+        price: 14.00,
+        tags: ["Classicas"],
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202003241142_GH2L_1.jpg",
+      },
+      {
+        name: "Tais Araujo",
+        description: "Queijo muçarela, presunto, leve pitada de orégano. A tradicional que é saborosa",
+        price: 19.00,
+        tags: ["Classicas"],
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202206161902_74CE_i.jpg",
+      },
+
     ]
   },
   {
@@ -36,16 +51,23 @@ const menuCategories = [
       {
         name: "Marta",
         description: "Cuscuz de milho, carne seca, muçarela, ovos, manteiga.",
-        price: 18.00,
-        tags: ["tradicional"],
-        image: "/images/cuscuz-laundelina.jpg"
+        price: 26.00,
+        tags: [""],
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011821_S5UL_i.jpg"
       },
       {
-        name: "Cuscuz Tereza de Benguela",
-        description: "Carne seca e queijo coalho",
-        price: 25.00,
-        tags: ["premium"],
-        image: "/images/cuscuz-tereza.jpg"
+        name: "Melania Luz",
+        description: "Cuscuz de milho, com ovos, coalho e manteiga.",
+        price: 18.00,
+        tags: [""],
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_C232_i.jpg"
+      },
+      {
+        name: "Rebeca Andrade",
+        description: "Cuscuz tradicional de milho e manteiga.",
+        price: 14.00,
+        tags: [""],
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_80E8_i.jpg"
       }
     ]
   }

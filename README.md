@@ -1,69 +1,55 @@
-# Welcome to your Lovable project
+# Tapioca das Pretas
 
-## Project info
+## Descrição
+Tapioca das Pretas é um projeto que celebra a culinária tradicional brasileira com um toque especial, homenageando mulheres negras importantes. Este repositório contém o código-fonte do site da Tapioca das Pretas, desenvolvido com React e Vite.
 
-**URL**: https://lovable.dev/projects/5870093c-8e45-4a75-a289-6d5e7e0ea71c
+## Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de build rápida para projetos web modernos.
+- **Tailwind CSS**: Framework de CSS utilitário para estilização.
+- **Radix UI**: Componentes acessíveis e descomplicados para React.
+- **React Hook Form**: Biblioteca para gerenciamento de formulários em React.
+- **Framer Motion**: Biblioteca para animações em React.
+- **Lucide Icons**: Conjunto de ícones para React.
+- **Tanstack React Query**: Biblioteca para gerenciamento de estado assíncrono.
 
-## How can I edit this code?
+## Estrutura do Projeto
+- **src/components**: Componentes reutilizáveis da interface do usuário.
+- **src/pages**: Páginas do site.
+- **src/hooks**: Hooks personalizados.
+- **src/lib**: Funções utilitárias.
+- **src/index.css**: Estilos globais do projeto.
+- **src/main.tsx**: Ponto de entrada do aplicativo.
 
-There are several ways of editing your application.
+## Scripts Disponíveis
+- `dev`: Inicia o servidor de desenvolvimento.
+- `build`: Compila o projeto para produção.
+- `lint`: Executa o linter para verificar problemas no código.
+- `preview`: Visualiza a versão de produção do projeto.
 
-**Use Lovable**
+## Como Executar o Projeto
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/rafael/tapioca-das-pretas.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd tapioca-das-pretas
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
+4. Inicie o servidor de desenvolvimento:
+    ```sh
+    npm run dev
+    ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5870093c-8e45-4a75-a289-6d5e7e0ea71c) and start prompting.
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5870093c-8e45-4a75-a289-6d5e7e0ea71c) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Contato
+Para mais informações, entre em contato com Rafael Raniere de Oliveira.

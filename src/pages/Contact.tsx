@@ -44,10 +44,10 @@ export const Contact = () => {
               icon={<MapPin className="w-5 h-5" />}
               title="Endereço"
             >
-              <p>Rua das Quitandeiras, 123</p>
-              <p>São Paulo - SP</p>
+              <p>Rua CP10 com Avenida Milão Loteamento - Res. Celina Park</p>
+              <p>Goiania - GO</p>
               <a
-                href="https://maps.google.com/?q=Rua+das+Quitandeiras,123,São+Paulo,SP"
+                href="https://www.google.com/maps/place/Tapioca+das+Pretas+-+Eldorado/@-16.7093252,-49.3250216,17z/data=!3m1!4b1!4m6!3m5!1s0x935ef2842b30d903:0x9909d0107f44d75c!8m2!3d-16.7093304!4d-49.3224467!16s%2Fg%2F12hntvsg5?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-brand-orange hover:text-brand-terra mt-2"
@@ -58,10 +58,10 @@ export const Contact = () => {
 
             <ContactInfoCard icon={<Phone className="w-5 h-5" />} title="Telefone">
               <a
-                href="tel:+5511999999999"
+                href="tel:+5562998605278"
                 className="hover:text-brand-terra transition-colors"
               >
-                (11) 99999-9999
+                (62) 99860-5278
               </a>
             </ContactInfoCard>
 
@@ -75,8 +75,8 @@ export const Contact = () => {
             </ContactInfoCard>
 
             <ContactInfoCard icon={<Clock className="w-5 h-5" />} title="Horário">
-              <p>Segunda a Sábado: 11h às 22h</p>
-              <p>Domingo: 12h às 20h</p>
+              <p>Segunda a Sábado: 11h às 21h</p>
+              <p>Domingos e Feriasdos: Fechado</p>
             </ContactInfoCard>
           </motion.div>
 
@@ -101,7 +101,7 @@ export const Contact = () => {
                     Peça agora e receba em casa com todo sabor
                   </p>
                   <a
-                    href="https://www.ifood.com.br"
+                    href="https://www.ifood.com.br/delivery/goiania-go/tapioca-das-pretas--loteamento-celina-park/01d1ccac-5a87-44fb-8984-6f9491753203"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-brand-orange text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-colors"

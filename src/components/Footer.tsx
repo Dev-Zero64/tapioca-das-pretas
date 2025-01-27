@@ -7,12 +7,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Horário de Funcionamento</h3>
-            <p>Segunda a Sábado</p>
-            <p>11h às 21h</p>
-            <p>Domingo</p>
-            <p>Fechado</p>
-            <p>Feriado</p>
-            <p>Fechado</p>
+            <p>Segunda a Sábado: de 11h as 21h</p>
+            <p>Domingos e Feriados: Fechado</p>
           </div>
           
           <div>
