@@ -11,21 +11,21 @@ const menuCategories = [
         description: "Frango artesanal desfiado, requeijão cremoso, pimenta biquinho e uma pitadinha de orégano e manjericão.",
         price: 16.00,
         tags: ["Especiais"],
-        image: "/images/tapioca-beyonce.jpg"
+        image: "https://res.cloudinary.com/vuca-solution/image/upload/w_480,h_360,c_fit,q_auto,fl_lossy/v1695417763/storage.vucasolution.com.br/tapiocadaspretas/arqs/produtos/etjhzke0rwb1r8iox1yv.jpg"
       },
       {
         name: "Sheron Menezes",
-        description: "Queijo muçarela, carne seca artesanal desfiada e tomate cereja.",
+        description: "Queijo muçarela, carne seca artesanal desfiada diferenciada é claro e tomate cereja. É demais, é muito boa",
         price: 28.00,
         tags: ["Clássicas"],
-        image: "/images/tapioca-sheron.jpg"
+        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292123_1K8G_i.jpg"
       },
       {
-        name: "Tapioca Marielle Franco",
-        description: "Queijo, tomate e orégano",
+        name: "Marielle Franco",
+        description: "Veio em uma nova versão combinando o Morango e leite em pó cremoso, o tradicional morango com Ninho. Aqui sabe ser deliciosa Tapioca Leve & Massa fininha",
         price: 20.00,
-        tags: ["vegetariano"],
-        image: "/images/tapioca-marielle.jpg"
+        tags: ["Sobremesa de Tapioca"],
+        image: "https://xamegobom.com.br/wp-content/uploads/2017/02/tapioca-com-leite-condensado1.jpg"
       }
     ]
   },
@@ -34,8 +34,8 @@ const menuCategories = [
     icon: <IconCake className="text-brand-terra" size={32} />,
     items: [
       {
-        name: "Cuscuz Laudelina de Campos",
-        description: "Tradicional com ovo, queijo e manteiga",
+        name: "Marta",
+        description: "Cuscuz de milho, carne seca, muçarela, ovos, manteiga.",
         price: 18.00,
         tags: ["tradicional"],
         image: "/images/cuscuz-laundelina.jpg"
