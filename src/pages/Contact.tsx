@@ -95,7 +95,7 @@ export const Contact = () => {
               <div className="space-y-6">
                 <div className="bg-brand-light rounded-lg p-4">
                   <h3 className="font-semibold flex items-center mb-2">
-                   
+                   Ifood
                   </h3>
                   <p className="text-gray-600 mb-4">
                     Peça agora e receba em casa com todo sabor
@@ -112,7 +112,6 @@ export const Contact = () => {
 
                 <div className="bg-brand-light rounded-lg p-4">
                   <h3 className="font-semibold flex items-center mb-2">
-                   
                     WhatsApp
                   </h3>
                   <p className="text-gray-600 mb-4">
