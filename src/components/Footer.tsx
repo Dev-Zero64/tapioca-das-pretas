@@ -8,31 +8,31 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Horário de Funcionamento</h3>
             <p>Segunda a Sábado</p>
-            <p>11h às 22h</p>
+            <p>11h às 21h</p>
             <p>Domingo</p>
-            <p>12h às 20h</p>
+            <p>Fechado</p>
+            <p>Feriado</p>
+            <p>Fechado</p>
           </div>
           
           <div>
             <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p>Rua das Quitandeiras, 123</p>
-            <p>São Paulo - SP</p>
-            <p>Tel: (11) 99999-9999</p>
+            <p>Rua CP10 com Avenida Milão Loteamento - Res. Celina Park</p>
+            <p>Goiania - GO</p>
+            <p>CEP: 74373-200</p>
+            <p>Tel: (62) 99860-5278</p>
           </div>
 
           <div>
             <h3 className="text-xl font-bold mb-4">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-brand-orange">
+              <a href="https://www.instagram.com/tapiocadaspretas" className="hover:text-brand-orange">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-brand-orange">
+              <a href="https://www.facebook.com/tapiocadaspretas" className="hover:text-brand-orange">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-brand-orange">
-                <Music size={24} />
-              </a>
-              <a href="#" className="hover:text-brand-orange">
+              <a href="https://wa.me/556298605278" className="hover:text-brand-orange">
                 <Phone size={24} />
               </a>
             </div>

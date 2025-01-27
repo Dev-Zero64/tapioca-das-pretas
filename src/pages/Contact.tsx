@@ -70,7 +70,7 @@ export const Contact = () => {
                 href="mailto:contato@tapiocadaspretas.com.br"
                 className="hover:text-brand-terra transition-colors break-all"
               >
-                contato@tapiocadaspretas.com.br
+                rh.tapiocadaspretas@gmail.com
               </a>
             </ContactInfoCard>
 
@@ -118,7 +118,7 @@ export const Contact = () => {
                     Faça seu pedido diretamente pelo nosso WhatsApp
                   </p>
                   <a
-                    href="https://wa.me/5511999999999"
+                    href="https://wa.me/556298605278"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors"
@@ -132,7 +132,7 @@ export const Contact = () => {
             {/* Mapa */}
             <div className="aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-sm">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.650847733444!2d-46.6335833!3d-23.5488083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzU1LjciUyA0NsKwMzgnMDEuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.3509810821183!2d-49.3224467!3d-16.7093304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef2842b30d903%3A0x9909d0107f44d75c!2sTapioca%20das%20Pretas%20-%20Eldorado!5e0!3m2!1spt-BR!2sbr!4v1737949787475!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 loading="lazy"

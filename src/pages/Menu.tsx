@@ -25,6 +25,7 @@ const menuCategories = [
         price: 20.00,
         tags: ["vegetariano"]
       }
+      
     ]
   },
   {

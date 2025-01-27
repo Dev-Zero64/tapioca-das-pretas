@@ -13,13 +13,13 @@ import {
 // Timeline atualizada com ícones do Lucide
 const timeline = [
   {
-    year: "2020",
+    year: "2015",
     title: "Fundação",
     description: "Nascimento do projeto em uma pequena cozinha comunitária",
     icon: <HistoryIcon className="text-brand-orange w-6 h-6" />
   },
   {
-    year: "2021",
+    year: "2018",
     title: "Primeiro Espaço Físico",
     description: "Inauguração do nosso primeiro ponto fixo no centro da cidade",
     icon: <Utensils className="text-brand-terra w-6 h-6" />
