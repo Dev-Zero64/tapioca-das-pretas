@@ -8,16 +8,16 @@ const menuCategories = [
     icon: <IconCookie className="text-brand-orange" size={32} />,
     items: [
       {
-        name: "Tapioca Carolina Maria de Jesus",
-        description: "Carne seca, queijo coalho e manteiga de garrafa",
-        price: 25.00,
-        tags: ["tradicional", "picante"]
+        name: "Beyoncé",
+        description: "Frango artesanal desfiado, requeijão cremoso, pimenta biquinho e uma pitadinha de orégano e manjericão. Isso é bom demais",
+        price: 16.00,
+        tags: ["Especiais"]
       },
       {
-        name: "Tapioca Lélia Gonzalez",
-        description: "Frango desfiado, queijo e oregano",
-        price: 23.00,
-        tags: ["light"]
+        name: "Sheron Menezes",
+        description: "Queijo muçarela, carne seca artesanal desfiada diferenciada é claro e tomate cereja. É demais, é muito boa",
+        price: 28.00,
+        tags: ["Classicas"]
       },
       {
         name: "Tapioca Marielle Franco",
@@ -25,7 +25,7 @@ const menuCategories = [
         price: 20.00,
         tags: ["vegetariano"]
       }
-      
+
     ]
   },
   {
