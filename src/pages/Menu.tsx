@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { IconCookie, IconCake, IconLeaf } from "@tabler/icons-react";
+import {
+  IconCookie,
+  IconCake,
+  IconLeaf,
+  IconBottle,
+  IconBuildingStore,
+} from "@tabler/icons-react";
 
 const menuCategories = [
   {
@@ -8,41 +14,77 @@ const menuCategories = [
     items: [
       {
         name: "Beyoncé",
-        description: "Frango artesanal desfiado, requeijão cremoso, pimenta biquinho e uma pitadinha de orégano e manjericão.",
-        price: 16.00,
+        description:
+          "Frango artesanal desfiado, requeijão cremoso, pimenta biquinho e uma pitadinha de orégano e manjericão.",
+        price: 16.0,
         tags: ["Especiais"],
-        image: "https://res.cloudinary.com/vuca-solution/image/upload/w_480,h_360,c_fit,q_auto,fl_lossy/v1695417763/storage.vucasolution.com.br/tapiocadaspretas/arqs/produtos/etjhzke0rwb1r8iox1yv.jpg"
+        image:
+          "https://res.cloudinary.com/vuca-solution/image/upload/w_480,h_360,c_fit,q_auto,fl_lossy/v1695417763/storage.vucasolution.com.br/tapiocadaspretas/arqs/produtos/etjhzke0rwb1r8iox1yv.jpg",
       },
       {
         name: "Sheron Menezes",
-        description: "Queijo muçarela, carne seca artesanal desfiada diferenciada é claro e tomate cereja. É demais, é muito boa",
-        price: 28.00,
+        description:
+          "Queijo muçarela, carne seca artesanal desfiada diferenciada é claro e tomate cereja. É demais, é muito boa",
+        price: 28.0,
         tags: ["Clássicas"],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292123_1K8G_i.jpg"
-      },
-      {
-        name: "Marielle Franco",
-        description: "Veio em uma nova versão combinando o Morango e leite em pó cremoso, o tradicional morango com Ninho. Aqui sabe ser deliciosa Tapioca Leve & Massa fininha",
-        price: 20.00,
-        tags: ["Sobremesa de Tapioca"],
-        image: "https://xamegobom.com.br/wp-content/uploads/2017/02/tapioca-com-leite-condensado1.jpg"
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292123_1K8G_i.jpg",
       },
       {
         name: "Gloria Maria",
-        description: "Tapioca tradicional na manteiguinha de leite. O biju que amamos! Tapioca leve e massa fininha",
-        price: 14.00,
+        description:
+          "Tapioca tradicional na manteiguinha de leite. O biju que amamos! Tapioca leve e massa fininha",
+        price: 14.0,
         tags: ["Classicas"],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202003241142_GH2L_1.jpg",
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202003241142_GH2L_1.jpg",
       },
       {
         name: "Tais Araujo",
-        description: "Queijo muçarela, presunto, leve pitada de orégano. A tradicional que é saborosa",
-        price: 19.00,
+        description:
+          "Queijo muçarela, presunto, leve pitada de orégano. A tradicional que é saborosa",
+        price: 19.0,
         tags: ["Classicas"],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202206161902_74CE_i.jpg",
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202206161902_74CE_i.jpg",
       },
-
-    ]
+      {
+        name: "Das Pretas",
+        description:
+          "Queijo muçarela, cebola picadinha, carne seca artesanal desfiada diferenciada, cheddar, requeijão e tomate cereja. À Moda da casa.",
+        price: 33.0,
+        tags: ["Especiais"],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202003241145_Eok5_i.jpg",
+      },
+      {
+        name: "Oprah Winfrey",
+        description:
+          "Carne seca artesanal desfiada diferenciada, requeijão cremoso, mix de folhas (alface e rúcula) e molho especial maionese verde. Combinação que nunca erra. Sugerimos a goma rosa.",
+        price: 27.0,
+        tags: ["Especiais"],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011758_P0MW_i.jpg",
+      },
+      {
+        name: "Albanisa Maximiano",
+        description:
+          "Queijo muçarela, bacon, carne seca artesanal desfiada diferenciada e banana fresca. Combinação mais que perfeita.",
+        price: 35.0,
+        tags: ["Especiais"],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292131_C3U6_i.jpg",
+      },
+      {
+        name: "Silvia Nascimento",
+        description:
+          "Coco e leite condensando. Tradicionalmente deliciosa.",
+        price: 19.0,
+        tags: ["Sobremesa de Tapioca"],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292154_OL0E_i.jpg",
+      },
+    ],
   },
   {
     category: "Cuscuz",
@@ -51,37 +93,137 @@ const menuCategories = [
       {
         name: "Marta",
         description: "Cuscuz de milho, carne seca, muçarela, ovos, manteiga.",
-        price: 26.00,
+        price: 26.0,
         tags: [""],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011821_S5UL_i.jpg"
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011821_S5UL_i.jpg",
       },
       {
         name: "Melania Luz",
         description: "Cuscuz de milho, com ovos, coalho e manteiga.",
-        price: 18.00,
+        price: 18.0,
         tags: [""],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_C232_i.jpg"
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_C232_i.jpg",
       },
       {
         name: "Rebeca Andrade",
         description: "Cuscuz tradicional de milho e manteiga.",
-        price: 14.00,
+        price: 14.0,
         tags: [""],
-        image: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_80E8_i.jpg"
-      }
-    ]
-  }
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309221857_80E8_i.jpg",
+      },
+    ],
+  },
+  {
+    category: "Bebidas",
+    icon: <IconBottle className="text-brand-terra" size={32} />,
+    items: [
+      {
+        name: "Água Mineral",
+        description: "500ml",
+        price: 5.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202309121810_DVGS_i.jpg",
+      },
+      {
+        name: "Coca Cola",
+        description:
+          "A Coca-Cola regular Lata 350ml proporciona um sabor inigualável! Preparado a partir de água gaseificada, açúcar, extrato de noz de cola e cafeína, é uma ótima opção para refrescar!",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202306061709_337A_i.jpg",
+      },
+      {
+        name: "Suco de Laranja",
+        description:
+          "Só o caldo da laranja 500 ml, sem adição de água e açúcar. Nota: O sabor do suco vai depender de como está a safra da laranja, se a safra estrá mais azeda ou mais doce.",
+        price: 10.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202109122029_BC1L_i.jpg",
+      },
+      {
+        name: "Guaraná Jesus",
+        description:
+          "Bebida mais vendida no maranhão, “o sabor de viver o Maranhão”. É docinho, com um toque de cravo e canela e, claro, tem um tom rosado inconfundível.",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202306061646_87HC_i.jpg",
+      },
+      {
+        name: "Coca Cola Zero",
+        description:
+          "A Coca-Cola sem açucar Lata 350ml! Um convite para aqueles que amam desfrutar do sabor único de Coca-Cola, mas preferem opções sem açúcar: com o sabor de-li-ci-o-so que você já conhece.",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202306061711_325V_i.jpg",
+      },
+      {
+        name: "Guaraná Mineiro",
+        description:
+          "Refrigerante Guaraná Mineiro o melhor de minas Com você em todos os momentos. lata 350ml.",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202306061720_45IA_i.jpg",
+      },
+    ],
+  },
+  {
+    category: "Mercearia",
+    icon: <IconBuildingStore className="text-brand-terra" size={32} />,
+    items: [
+      {
+        name: "Cuscuzeira Modelo Quilombo",
+        description: "Nosso modelo de cuscuzeira para você fazer suas preparações em casa!",
+        price: 60.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202404292151_54LI_i.jpg",
+      },
+      {
+        name: "Molho de Alho",
+        description: "Saboroso molho de alho.",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011610_pxdio3zhw.png",
+      },
+      {
+        name: "Molho de Pimenta",
+        description: "Extraforte",
+        price: 7.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011610_3hxbnuodj26.png",
+      },
+      {
+        name: "Gominha de Tapioca Branca",
+        description: "Fabricado pela Tapioca das Pretas de forma artesanal, livre de conservantes e zero glúten. 500 gr",
+        price: 17.0,
+        tags: [""],
+        image:
+          "https://static.ifood-static.com.br/image/upload/t_medium/pratos/01d1ccac-5a87-44fb-8984-6f9491753203/202501011610_n4xpc2fso3t.png",
+      },
+    ],
+  },
 ];
 
 const MenuItem = ({ name, description, price, tags, image }) => (
-  <article 
+  <article
     className="group p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300 focus-within:ring-2 focus-within:ring-brand-orange"
     tabIndex={0}
   >
     <div className="flex gap-4">
       {/* Container da imagem */}
       <div className="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden shadow-sm">
-        <img 
+        <img
           src={image}
           alt={name}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -107,14 +249,14 @@ const MenuItem = ({ name, description, price, tags, image }) => (
             </div>
           )}
         </div>
-        
+
         {/* Preço */}
         <div className="sm:w-32 flex-shrink-0">
           <p className="text-brand-terra font-bold text-lg sm:text-right">
-            {price.toLocaleString("pt-BR", { 
-              style: "currency", 
+            {price.toLocaleString("pt-BR", {
+              style: "currency",
               currency: "BRL",
-              minimumFractionDigits: 2
+              minimumFractionDigits: 2,
             })}
           </p>
         </div>
@@ -127,22 +269,21 @@ export const Menu = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCategories = menuCategories
-    .map(category => ({
+    .map((category) => ({
       ...category,
-      items: category.items.filter(item =>
-        item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.description.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+      items: category.items.filter(
+        (item) =>
+          item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.description.toLowerCase().includes(searchQuery.toLowerCase())
+      ),
     }))
-    .filter(category => category.items.length > 0);
+    .filter((category) => category.items.length > 0);
 
   return (
     <div className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-12 space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900">
-            Nosso Cardápio
-          </h1>
+          <h1 className="text-4xl font-bold text-gray-900">Nosso Cardápio</h1>
           <div className="max-w-2xl mx-auto relative">
             <input
               type="text"
@@ -151,9 +292,9 @@ export const Menu = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <IconLeaf 
-              className="absolute right-4 top-3.5 text-gray-400" 
-              size={24} 
+            <IconLeaf
+              className="absolute right-4 top-3.5 text-gray-400"
+              size={24}
             />
           </div>
         </header>
@@ -166,7 +307,7 @@ export const Menu = () => {
             </div>
           ) : (
             filteredCategories.map((category) => (
-              <section 
+              <section
                 key={category.category}
                 className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
               >

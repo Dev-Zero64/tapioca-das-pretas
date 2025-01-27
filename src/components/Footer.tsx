@@ -17,6 +17,7 @@ export const Footer = () => {
             <p>Goiania - GO</p>
             <p>CEP: 74373-200</p>
             <p>Tel: (62) 99860-5278</p>
+            <p>CNPJ: 50.697.442/0001-07</p>
           </div>
 
           <div>

@@ -46,6 +46,7 @@ export const Contact = () => {
             >
               <p>Rua CP10 com Avenida Milão Loteamento - Res. Celina Park</p>
               <p>Goiania - GO</p>
+              <p>CEP: 74373-200</p>
               <a
                 href="https://www.google.com/maps/place/Tapioca+das+Pretas+-+Eldorado/@-16.7093252,-49.3250216,17z/data=!3m1!4b1!4m6!3m5!1s0x935ef2842b30d903:0x9909d0107f44d75c!8m2!3d-16.7093304!4d-49.3224467!16s%2Fg%2F12hntvsg5?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
