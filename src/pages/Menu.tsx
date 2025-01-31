@@ -9,7 +9,7 @@ import {
 } from "@tabler/icons-react";
 
 const menuCategories = [
-   {
+  {
     category: "Tapiocas",
     icon: <IconCookie className="text-brand-orange" size={32} />,
     items: [
@@ -78,8 +78,7 @@ const menuCategories = [
       },
       {
         name: "Silvia Nascimento",
-        description:
-          "Coco e leite condensando. Tradicionalmente deliciosa.",
+        description: "Coco e leite condensando. Tradicionalmente deliciosa.",
         price: 19.0,
         tags: ["Sobremesa de Tapioca"],
         image:
@@ -182,7 +181,8 @@ const menuCategories = [
     items: [
       {
         name: "Cuscuzeira Modelo Quilombo",
-        description: "Nosso modelo de cuscuzeira para você fazer suas preparações em casa!",
+        description:
+          "Nosso modelo de cuscuzeira para você fazer suas preparações em casa!",
         price: 60.0,
         tags: [""],
         image:
@@ -206,7 +206,8 @@ const menuCategories = [
       },
       {
         name: "Gominha de Tapioca Branca",
-        description: "Fabricado pela Tapioca das Pretas de forma artesanal, livre de conservantes e zero glúten. 500 gr",
+        description:
+          "Fabricado pela Tapioca das Pretas de forma artesanal, livre de conservantes e zero glúten. 500 gr",
         price: 17.0,
         tags: [""],
         image:

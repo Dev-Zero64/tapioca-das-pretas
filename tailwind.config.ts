@@ -49,7 +49,8 @@ export default {
         },
       },
       backgroundImage: {
-        'hero-pattern': "linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)",
+        "hero-pattern":
+          "linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

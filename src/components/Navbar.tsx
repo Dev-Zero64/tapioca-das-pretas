@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -22,16 +21,28 @@ export const Navbar = () => {
             <Link to="/" className="text-gray-700 hover:text-brand-orange">
               Início
             </Link>
-            <Link to="/cardapio" className="text-gray-700 hover:text-brand-orange">
+            <Link
+              to="/cardapio"
+              className="text-gray-700 hover:text-brand-orange"
+            >
               Cardápio
             </Link>
-            <Link to="/nossa-historia" className="text-gray-700 hover:text-brand-orange">
+            <Link
+              to="/nossa-historia"
+              className="text-gray-700 hover:text-brand-orange"
+            >
               Nossa História
             </Link>
-            <Link to="/contato" className="text-gray-700 hover:text-brand-orange">
+            <Link
+              to="/contato"
+              className="text-gray-700 hover:text-brand-orange"
+            >
               Contato
             </Link>
-            <Link to="/midias" className="text-gray-700 hover:text-brand-orange">
+            <Link
+              to="/midias"
+              className="text-gray-700 hover:text-brand-orange"
+            >
               Mídias
             </Link>
           </div>

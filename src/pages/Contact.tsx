@@ -57,7 +57,10 @@ export const Contact = () => {
               </a>
             </ContactInfoCard>
 
-            <ContactInfoCard icon={<Phone className="w-5 h-5" />} title="Telefone">
+            <ContactInfoCard
+              icon={<Phone className="w-5 h-5" />}
+              title="Telefone"
+            >
               <a
                 href="tel:+5562998605278"
                 className="hover:text-brand-terra transition-colors"
@@ -75,7 +78,10 @@ export const Contact = () => {
               </a>
             </ContactInfoCard>
 
-            <ContactInfoCard icon={<Clock className="w-5 h-5" />} title="Horário">
+            <ContactInfoCard
+              icon={<Clock className="w-5 h-5" />}
+              title="Horário"
+            >
               <p>Segunda a Sábado: 11h às 21h</p>
               <p>Domingos e Feriasdos: Fechado</p>
             </ContactInfoCard>
@@ -92,11 +98,11 @@ export const Contact = () => {
               <h2 className="text-2xl font-bold text-brand-orange mb-6">
                 Delivery Rápido
               </h2>
-              
+
               <div className="space-y-6">
                 <div className="bg-brand-light rounded-lg p-4">
                   <h3 className="font-semibold flex items-center mb-2">
-                   Ifood
+                    Ifood
                   </h3>
                   <p className="text-gray-600 mb-4">
                     Peça agora e receba em casa com todo sabor
