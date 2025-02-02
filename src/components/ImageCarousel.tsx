@@ -20,7 +20,7 @@ export const ImageCarousel = () => {
             <CarouselContent>
               {[
                 {
-                  src: "public/cuscuz.jpg",
+                  src: "cuscuz.jpg",
                   alt: "Pratos típicos arrumados artisticamente",
                 },
                 {
